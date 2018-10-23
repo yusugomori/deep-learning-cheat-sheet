@@ -31,7 +31,4 @@ if __name__ == '__main__':
     '''
     lenet = LeNet((30, 30, 1), 10)
     model = lenet()
-    model.compile(loss='sparse_categorical_crossentropy',
-                  optimizer='adam',
-                  metrics=['accuracy'])
     model.summary()
