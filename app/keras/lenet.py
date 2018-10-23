@@ -7,6 +7,11 @@ from keras.datasets import fashion_mnist
 
 
 class LeNet(object):
+    '''
+    "Object Recognition with Gradient-Based Learning"
+    Yann LeCun et al.
+    http://yann.lecun.com/exdb/publis/pdf/lecun-99.pdf
+    '''
     def __init__(self, input_shape, output_dim):
         x = Input(shape=input_shape)
         h = Conv2D(6, kernel_size=(5, 5),

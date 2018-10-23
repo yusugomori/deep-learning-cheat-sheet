@@ -8,6 +8,11 @@ from keras.datasets import fashion_mnist
 
 
 class ResNet34(object):
+    '''
+    "Deep Residual Learning for Image Recognition"
+    Kaiming He et al.
+    https://arxiv.org/abs/1512.03385
+    '''
     def __init__(self, input_shape, output_dim):
         x = Input(shape=input_shape)
         h = Conv2D(64, kernel_size=(7, 7), strides=(2, 2), padding='same')(x)
